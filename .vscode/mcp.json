@@ -3,7 +3,10 @@
     "ESLint": {
       "type": "stdio",
       "command": "npx",
-      "args": ["@eslint/mcp@latest"]
+      "args": ["@eslint/mcp"],
+      "env": {
+        "ESLINT_FLAGS": "unstable_native_nodejs_ts_config"
+      }
     }
   }
 }
